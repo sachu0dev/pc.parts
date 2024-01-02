@@ -98,10 +98,14 @@ header .navbar a{
   color: var(--light-color);
 }
 
-header .navbar a.active,
-header .navbar a:hover{
+header .navbar a.active{
   color: #fff;
   background-color: var(--green);
+}
+
+header .navbar a:hover{
+  color: #fff;
+  background-color: var(--light-color);
 }
 header .icons i,
 header .icons a{
