@@ -104,8 +104,8 @@ header .navbar a.active{
 }
 
 header .navbar a:hover{
-  color: #fff;
-  background-color: var(--light-color);
+  color: black;
+  background-color: lightgray;
 }
 header .icons i,
 header .icons a{
