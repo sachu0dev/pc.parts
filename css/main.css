@@ -527,7 +527,7 @@ header .icons #menu-bars{
 
 .footer .box-container .box a{
   display: block;
-  padding: .5rem 0;
+  padding: 0.5rem 1rem ;
   font-size: 1.5rem;
   color: var(--light-color);
 }
