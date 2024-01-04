@@ -107,8 +107,7 @@ header .navbar a:hover{
   color: black;
   background-color: lightgray;
 }
-header .icons i,
-header .icons a{
+header .icons a i{
   cursor: pointer;
   margin-left: .5rem;
   height: 4.5rem;
@@ -121,12 +120,12 @@ header .icons a{
   background-color: #eee;
 }
 
-header .icons i:hover,
-header .icons a:hover{
+header .icons a i:hover{
   color: #fff;
   background-color: var(--green);
   transform: rotate(360deg);
 }
+
 header .icons #menu-bars{
   display: none;
 }
@@ -568,6 +567,12 @@ header .icons #menu-bars{
 .loader-container.fade-out{
   top: 110%;
   opacity: 0;
+}
+/* cart section */
+
+.shopping-cart h3{
+  padding-top: 5rem;
+  background: #fff;
 }
 
 
