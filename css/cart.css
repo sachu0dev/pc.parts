@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito:wght@200;300;400;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+  --green:#27ae60;
+  --black:#192a56;
+  --light-color:#666;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 70.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding: 2rem 9%;
+}
+
+
+header{
+  position: fixed;
+  top:0; left: 0; right: 0;
+  background: #fff;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+header .logo{
+  color:var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+header .logo i{
+  color: var(--green);
+}
+
+header .navbar a{
+  font-size: 1,7rem;
+  border-radius: .5rem;
+  padding: .5rem 1.5rem;
+  color: var(--light-color);
+}
+
+header .navbar a.active{
+  color: #fff;
+  background-color: var(--green);
+}
+
+header .navbar a:hover{
+  color: black;
+  background-color: lightgray;
+}
+header .icons a i{
+  cursor: pointer;
+  margin-left: .5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+header .icons a i:hover{
+  color: #fff;
+  background-color: var(--green);
+  transform: rotate(360deg);
+}
+
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--black);
+  border-radius: .5rem;
+  cursor: pointer;
+  padding: .8rem 3rem;
+}
+
+.btn:hover{
+  background-color: var(--green);
+  letter-spacing: .1rem;
+}
+
+/* Container Styles */
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 70%;
+  overflow: hidden;
+  display: grid;
+}
+
+.mx-auto1{
+    margin-left: auto;
+  margin-right: auto;
+  max-width: 2xl;
+  padding-left: 1rem; 
+  padding-right: 1rem;
+}
+
+.margin-y-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Divider on Y-axis with gray color */
+.divide-y {
+  border-top: 1px solid #a0aec0;
+  border-color: #d2d6dc; 
+}
+
+
+/* Grid Styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Form Styles */
+form {
+  margin: 2rem;
+}
+
+/* Input Styles */
+input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid #565656;
+  border-radius: 0.25rem;
+  font-size: 3rem;
+}
+
+/* Button Styles */
+button {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+/* Typography Styles */
+.text-lg {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.mt-4{
+  margin-top: 1.5rem;
+  width: 100%
+}
+
+.text-sm {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
+/* Divider Styles */
+hr {
+  border: 0;
+  height: 1px;
+  margin: 1rem 0;
+  background-color: #d2d6dc;
+}
+
+/* Flex Styles */
+.flex {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+mt-6{
+  margin-top: 1.5rem; /* Equivalent to mt-6 in Tailwind CSS */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Equivalent to grid-cols-3 in Tailwind CSS */
+  gap: 1rem 0.75rem; /* Equivalent to gap-x-4 gap-y-6 in Tailwind CSS */
+
+  /* Responsive styles for small screens and above */
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(4, 1fr); /* Equivalent to sm:grid-cols-4 in Tailwind CSS */
+  }
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: 10rem;
+  margin-right: 0.625rem;
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Price Styles */
+.text-gray-500 {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.text-gray-600 {
+  color: #718096;
+  font-weight: 600;
+}
+
+.text-gray-400 {
+  color: #a0aec0;
+  font-weight: 400;
+}
+
+.text-black {
+  color: #000;
+}
+
+/* Coupon Styles */
+.space-y-3 {
+  margin-top: 1rem;
+}
+
+/* Total Styles */
+.text-gray-900 {
+  color: var(--black);
+  font-weight: 900;
+  font-weight: 700;
+}
+
+/* Checkout Button Styles */
+.bg-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.hover\:bg-black:hover {
+  background-color: #000;
+}
+
+.focus-visible\:outline-black:focus-visible {
+  outline-color: #000;
+}
+
+/* Remove Button Styles */
+.inline-flex {
+  display: inline-flex;
+  border-radius: 0.25rem;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.hover\:text-gray-900:hover {
+  color: #000;
+}
+
+.focus\:outline {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:ring-2:focus {
+  box-shadow: 0 0 0 2px #000;
+}
+
+.focus\:ring-offset-2:focus {
+  box-shadow: 0 0 0 2px #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:991px){
+
+  html{
+    font-size: 55%;
+  }
+  header{
+    padding: 1rem 2rem;
+  }
+  section{
+    padding: 2rem;
+  }
+
+}
+
+@media (max-width:768px){
+
+  header .navbar{
+    position: absolute;
+    top:100%; left:0; right:0;
+    background: #fff;
+    border-top: .1rem solid rgba(0,0,0,.2);
+    border-bottom: .1rem solid rgba(0,0,0,.2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a{
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: #eee;
+  }
+
+}
+
+@media (max-width:450px){
+
+  html{
+    font-size: 50%;
+  }
+
+}

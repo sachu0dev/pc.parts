@@ -1,0 +1,47 @@
+/* style.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+}
+
+.shopping-cart-text {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cart {
+  margin: 20px 0;
+}
+
+.cart-details {
+  padding: 20px;
+  color: #333;
+}
+
+.cart-summary {
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+}
