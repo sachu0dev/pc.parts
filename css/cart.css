@@ -207,14 +207,13 @@ hr {
 }
 
 mt-6{
-  margin-top: 1.5rem; /* Equivalent to mt-6 in Tailwind CSS */
+  margin-top: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Equivalent to grid-cols-3 in Tailwind CSS */
-  gap: 1rem 0.75rem; /* Equivalent to gap-x-4 gap-y-6 in Tailwind CSS */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 0.75rem; 
 
-  /* Responsive styles for small screens and above */
   @media (min-width: 640px) {
-    grid-template-columns: repeat(4, 1fr); /* Equivalent to sm:grid-cols-4 in Tailwind CSS */
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
