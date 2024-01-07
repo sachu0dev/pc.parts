@@ -224,9 +224,11 @@ mt-6{
 
 /* Image Styles */
 img {
-  max-width: 100%;
+  max-width: 10rem;
   height: 10rem;
   margin-right: 0.625rem;
+  object-fit: contain;
+  
 }
 
 /* List Styles */
