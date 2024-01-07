@@ -315,6 +315,7 @@ header .icons #menu-bars{
   font-weight: bolder;
   margin-right: 1rem;
   font-size: 2.5rem;
+  display: block;
 }
 
 .about .row{
