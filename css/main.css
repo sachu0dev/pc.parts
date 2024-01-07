@@ -130,6 +130,11 @@ header .icons #menu-bars{
   display: none;
 }
 
+.cart-no{
+  position: absolute;
+  top: 0;
+}
+
 #search-form{
   position: fixed;
   top: -110%; left: 0;

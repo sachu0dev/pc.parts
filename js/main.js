@@ -74,3 +74,6 @@ function fadeOut(){
 }
 
 window.onload = fadeOut;
+let cartAmount = 0;
+const cartElement = document.querySelector('.cart-no');
+cartElement.textContent = ''
