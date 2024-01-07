@@ -86,21 +86,6 @@ header .icons a i:hover{
   transform: rotate(360deg);
 }
 
-.btn{
-  margin-top: 1rem;
-  display: inline-block;
-  font-size: 1.7rem;
-  color: #fff;
-  background: var(--black);
-  border-radius: .5rem;
-  cursor: pointer;
-  padding: .8rem 3rem;
-}
-
-.btn:hover{
-  background-color: var(--green);
-  letter-spacing: .1rem;
-}
 
 /* Container Styles */
 
@@ -396,7 +381,20 @@ ul {
     font-size: 2rem;
     background: #eee;
   }
+  .mx-auto {
+    max-width: 100%;
+  }
 
+  .grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+}
+
+@media (max-width: 1440px){
+  .grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
 @media (max-width:450px){
@@ -404,5 +402,15 @@ ul {
   html{
     font-size: 50%;
   }
+
+  .mx-auto {
+    max-width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  
+
 
 }
