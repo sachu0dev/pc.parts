@@ -5,7 +5,6 @@ const slider = document.getElementById('slider');
 const choiseBox = document.getElementById('box-container');
 
 
-
 //home section slider starts
 
 function renderSlider(products){
@@ -92,3 +91,8 @@ function renderBox(products){
 renderBox(products);
 
 // products section ends
+
+//product page starts
+
+
+//product page ends

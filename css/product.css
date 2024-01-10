@@ -190,28 +190,100 @@ header .icons #menu-bars{
 .product-page{
   display: grid;
   grid-template-columns: 55vw 45vw;
-  padding: 10vh 0vw;
-  height: 100vh;
-  margin: 2vw;
+  padding-top: 10vh;
+  height: 90vh;
+  margin-top: 8vh;
+  background-color: rgb(248, 248, 248);
+  border: none;
 }
 
 .image-container{
   padding: 2vw 5vw;
-  background-color: rgb(235, 235, 235);
   border-radius: 2%;
   align-items: center;
   justify-content: center;
   display: flex;
+  padding-top: 5px;
+  position: relative;
+}
+
+#left-image{
+  position: absolute;
+  left: 3rem;
+  color: #cdcdcd;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+#right-image{
+  position: absolute;
+  right: 3rem;
+  color: #cdcdcd;
+  font-size: 5rem;
+  cursor: pointer;
 }
 
 .image-container img{
   aspect-ratio: 1/1;
   object-fit: contain;
-  height: 80vh;
+  height: 70vh;
 }
 
+.info-box{
+  background-color: #fff;
+  padding: 5rem;
+  border-top-left-radius: 5rem;
+  padding-right: 10rem;
+}
 
+.info-box h2{
+  font-size: 4rem;
+  color: var(--black);
+  font-weight: 700;
+}
+.info-box h4{
+  font-size: 1.6rem;
+  color: var(--light-color);
+  font-weight: 700;
+  margin-top: 5rem;
+}
+.info-box p{
+  font-size: 1.5rem;
+  color: var(--light-color);
+  margin-top: 2rem;
+}
+.price-box h5{
+  font-size: 1.6rem;
+  color: var(--light-color);
+  font-weight: 700;
+  margin-top: 5rem;
+}
+.price-box h3{
+  font-size: 3rem;
+  color: var(--green);
+  font-weight: 700;
+}
+.add-box{
+  display:  flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5.5rem;
+}
+label {
+  font-size: 1.6rem;
+  color: var(--black);
+  font-weight: 700;
+}
 
+select {
+  font-size: 20px;
+  padding: 8px;
+  width: 20px;
+}
+
+option{
+  color: var(--black);
+}
 
 
 
