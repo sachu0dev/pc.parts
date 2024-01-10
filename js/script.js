@@ -1,11 +1,12 @@
 import { products } from "../data/product.js";
 
+const productBox = document.getElementById('product-box');
+const slider = document.getElementById('slider');
+const choiseBox = document.getElementById('box-container');
 
 
 
 //home section slider starts
-
-const slider = document.getElementById('slider');
 
 function renderSlider(products){
   
@@ -32,7 +33,6 @@ renderSlider(products);
 //home section slider ends
 
 // featured section starts...
-const productBox = document.getElementById('product-box');
 
 function renderProducts(products){
 
@@ -58,3 +58,37 @@ function renderProducts(products){
 renderProducts(products);
 
 // featured section ends...
+
+// products section starts
+
+function renderBox(products){
+  
+  for(let i = 0; i < 8; i++){
+
+    let randomDisplay = Math.floor(Math.random() * products.length);
+
+    choiseBox.innerHTML += `
+    <div class="box">
+      <div class="image">
+        <img src="${products[randomDisplay].image}" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="starrs">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>${products[randomDisplay].name}</h3>
+        <p>${products[randomDisplay].info}</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹${products[randomDisplay].price}</span>
+      </div>
+    </div>`
+  }
+}
+renderBox(products);
+
+// products section ends

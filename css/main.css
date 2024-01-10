@@ -415,7 +415,7 @@ header .icons #menu-bars{
   height: 100%;
   width: 100%;
   border-radius: .5rem;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .menu .box-container .box .image .fa-heart{
@@ -461,6 +461,10 @@ header .icons #menu-bars{
   font-size: 1.6rem;
   padding: .5rem 0;
   line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
 }
 
 .menu .box-container .box .content .price{
