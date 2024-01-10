@@ -212,6 +212,8 @@ header .icons #menu-bars{
 .home .home-slider .slide .image img,
 .sales .sales-slider .slide .image img{
   width: 100%;
+  object-fit: contain;
+  aspect-ratio: 1/1;
 }
 
 .home .home-slider .slide .content span,
@@ -298,7 +300,9 @@ header .icons #menu-bars{
 
 .product .box-container .box img{
   height: 17rem;
+  aspect-ratio: 1/1;
   margin: 1rem 0;
+  object-fit: contain;
 }
 
 .product .box-container .box h3{
