@@ -264,12 +264,14 @@ header .icons #menu-bars{
   font-size: 3rem;
   color: var(--green);
   font-weight: 700;
+  padding-bottom: 10px;
 }
 .add-box{
   display:  flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5.5rem;
+  padding-top: 6rem;
+  border-top: 1px solid lightgray;
 }
 label {
   font-size: 1.6rem;
