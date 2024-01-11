@@ -22,7 +22,7 @@ PC.Parts encourages user engagement through a review system. Users can share the
 
 ## Technologies Utilized
 
-- **Frontend:** HTML, CSS, JavaScript, React.js
+- **Frontend:** HTML, CSS, JavaScript
 
 ## Getting Started
 
