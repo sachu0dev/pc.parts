@@ -526,6 +526,7 @@ header .icons #menu-bars{
   margin-top: 0;
 }
 
+
 .footer .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
