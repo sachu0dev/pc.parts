@@ -40,40 +40,60 @@ document.querySelector('#close').onclick = () =>{
 var swiper = new Swiper(".home-slider", {
   spaceBetween: 30,
   centeredSlides: true,
+
   autoplay: {
     delay: 5500,
     disableOnInteraction: false,
   },
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  loop:true,
+
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 var swiper = new Swiper(".sales-slider", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
-    delay: 5500,
+    delay: 8000,
     disableOnInteraction: false,
   },
+
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination-sales",
     clickable: true,
   },
-  loop:true,
+
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
-function loader(){
-  document.querySelector('.loader-container').classList.add('fade-out');
+
+let loaderExecuted = false;
+
+function loader() {
+  if (!loaderExecuted) {
+    document.querySelector('.loader-container').classList.add('fade-out');
+    loaderExecuted = true;
+  }
 }
 
-function fadeOut(){
-  setInterval(loader, 3000);
+function fadeOut() {
+  setTimeout(loader, 3000);
 }
 
 window.onload = fadeOut;
+
 let cartAmount = 0;
 const cartElement = document.querySelector('.cart-no');
-cartElement.textContent = ''
+cartElement.textContent = '';
