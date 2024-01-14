@@ -603,6 +603,7 @@ header .icons #menu-bars{
   border: 1px solid lightgray;
   color: var(--light-color);
   display: inline-block;
+  margin: 0 1.8rem;
 }
 
 .product h2:hover{
@@ -619,7 +620,7 @@ header .icons #menu-bars{
 .filter-button-container{
   display: flex;
   padding: 1.8rem;
-  margin-bottom: 2rem;
+  padding-bottom: 0;
   gap: .5rem;
   transition: all 0.3s linear;
   display: none;
