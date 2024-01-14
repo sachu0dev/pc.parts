@@ -79,20 +79,6 @@ var swiper = new Swiper(".sales-slider", {
 });
 
 
-let loaderExecuted = false;
-
-function loader() {
-  if (!loaderExecuted) {
-    document.querySelector('.loader-container').classList.add('fade-out');
-    loaderExecuted = true;
-  }
-}
-
-function fadeOut() {
-  setTimeout(loader, 3000);
-}
-
-window.onload = fadeOut;
 
 let cartAmount = 0;
 const cartElement = document.querySelector('.cart-no');

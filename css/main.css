@@ -244,10 +244,12 @@ header .icons #menu-bars{
   background-color: var(--green);
 }
 
+
 .product .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   gap: 1.5rem;
+  margin-top: 3rem;
 }
 
 .product .box-container .box{
@@ -588,6 +590,65 @@ header .icons #menu-bars{
 .shopping-cart h3{
   padding-top: 5rem;
   background: #fff;
+}
+
+
+/* filter section */
+.product h2{
+  font-size: 1.6rem;
+  font-weight: 900;
+  background-color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  border: 1px solid lightgray;
+  color: var(--light-color);
+  display: inline-block;
+}
+
+.product h2:hover{
+  color: var(--green);
+  cursor: pointer;
+  background: rgb(236, 236, 236);
+}
+
+.product h2 i{
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.filter-button-container{
+  display: flex;
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+  gap: .5rem;
+  transition: all 0.3s linear;
+  display: none;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  width: 60vw;
+}
+
+.show-filters{
+  display: flex;
+}
+
+.filter-btn{
+  font-size: 1.4rem;
+  font-weight: 900;
+  background-color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  border: 1px solid lightgray;
+  color: var(--light-color);
+}
+
+.filter-btn i{
+  display: none;
+}
+
+.filter-btn:hover{
+  background-color: var(--green);
+  color: #fff;
 }
 
 
