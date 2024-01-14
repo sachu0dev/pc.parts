@@ -14,7 +14,7 @@ export const products = [
     image: "images/home-img-2.png",
     name: "The NVIDIA® GeForce RTX™ 4090",
     rating: 4,
-    price: 2095,
+    price: 209578,
     info:  "MSI GeForce RTX 4090 SUPRIM Liquid X 24G Graphic Card I NVIDIA GeForce RTX 4090 GPU | 24 GB GDDR6X 384-bit Memory, | 21 Gbps Speed | PCI Express 4 Interface | Upto 2640 MHz | TORX Fan 5.0, Zero FROZR",
     keyword1: "graphicscard",
     keyword2: 'msi'
@@ -76,8 +76,8 @@ export const products = [
     rating: 4.9,
     price: 32159,
     info:  "Desktop Processor 16 Cores 32 Threads 72 MB Cache 3.4 GHz up to 4.9 GHz AM4 Socket 500 Series chipset Socket AM4(100-100000059WOF)",
-    keyword1: "ram",
-    keyword2: "memory"
+    keyword1: "processors",
+    keyword2: 'amd'
   },
   {
     id: "menu-1",

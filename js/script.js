@@ -4,11 +4,15 @@ const productBox = document.getElementById('product-box');
 const slider = document.getElementById('slider');
 const choiseBox = document.getElementById('box-container');
 
-window.addEventListener('DOMContentLoaded',()=>{
+
+window.addEventListener('DOMContentLoaded', () => {
   renderSlider(products);
   renderProducts(products);
   renderBox(products);
+  displayFilterBtn();
 });
+
+
 
 
 //home section slider starts
@@ -33,16 +37,6 @@ function renderSlider(products){
   }
 }
 
-
-//home section slider ends
-
-// featured section starts...
-
-
-
-// featured section ends...
-
-// products section starts
 
 function renderBox(products){
   
@@ -73,27 +67,10 @@ function renderBox(products){
   }
 }
 
-// function renderProducts(products){
+const filterBtn = document.querySelector('.filter-show-btn');
+const filterArrow = document.querySelector('.filter-arrow');
+const filterBtns = document.querySelector('.filter-button-container');
 
-//   for(let i = 0; i < products.length; i++){
-//     productBox.innerHTML += `
-//   <div class="box ${products[i].id}">
-//     <a href="#" class="fas fa-heart"></a>
-//     <a href="#" class="fas fa-eye"></a>
-//     <a href="product.html"><img src=${products[i].image}></a>
-//     <h3>${products[i].name}</h3>
-//     <div class="starrs">
-//       <i class="fas fa-star"></i>
-//       <i class="fas fa-star"></i>
-//       <i class="fas fa-star"></i>
-//       <i class="fas fa-star"></i>
-//       <i class="fas fa-star-half-alt"></i>
-//     </div>
-//     <span>₹${products[i].price}</span>
-//     <a href="#" class="btn">add to cart</a>
-//   </div>`
-//   }
-// }
 
 function renderProducts(products){
   let productsItems = products.map((item)=>{
@@ -117,48 +94,54 @@ function renderProducts(products){
   productsItems = productsItems.join('');
   productBox.innerHTML = productsItems;
 }
-// products section ends
-
-//product page starts
 
 
-//product page ends
+function displayFilterBtn(){
 
+  filterBtn.addEventListener('click', ()=>{
+    if(filterArrow.classList.contains('fa-angle-down')){
+      filterArrow.classList.remove('fa-angle-down');
+      filterArrow.classList.add('fa-angle-up');
+    } else if(filterArrow.classList.contains('fa-angle-up')){
+      filterArrow.classList.remove('fa-angle-up');
+      filterArrow.classList.add('fa-angle-down');
+    }
+    filterBtns.classList.toggle('show-filters');
+  });
 
-// filter section
-const filterBtn = document.querySelector('.filter-show-btn');
-const filterArrow = document.querySelector('.filter-arrow');
+  const categories = products.reduce(function(values, item){
+    if(!values.includes(item.keyword1)){
+      values.push(item.keyword1);
+    }
+    if(!values.includes(item.keyword2)){
+      values.push(item.keyword2);
+    }
+    return values
+  },['all']);
+  
+  const categoryBtns = categories.map((category) => {
+    return `<button class="filter-btn" type="button" data-id="${category}">
+      <i class="fa-solid fa-check"></i> ${category}
+    </button>`;
+  }).join("");
+  filterBtns.innerHTML = categoryBtns;
+  const addedBtns = document.querySelectorAll('.filter-btn');
+  console.log(addedBtns);
+  //filter items
+  addedBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      const category = e.currentTarget.dataset.id;
+      const menuCategory = products.filter(function (menuItem) {
+        return menuItem.keyword1 === category || menuItem.keyword2 === category;
+      });
+      if (category === 'all') {
+        renderProducts(products);
+      } else {
+        renderProducts(menuCategory);
+      }
+    });
+  });
+}
 
-filterBtn.addEventListener('click', ()=>{
-  if(filterArrow.classList.contains('fa-angle-down')){
-    filterArrow.classList.remove('fa-angle-down');
-    filterArrow.classList.add('fa-angle-up');
-  } else if(filterArrow.classList.contains('fa-angle-up')){
-    filterArrow.classList.remove('fa-angle-up');
-    filterArrow.classList.add('fa-angle-down');
-  }
-  filterBtns.classList.toggle('show-filters');
-});
-
-const categories = products.reduce(function(values, item){
-  if(!values.includes(item.keyword1)){
-    values.push(item.keyword1);
-  }
-  if(!values.includes(item.keyword2)){
-    values.push(item.keyword2);
-  }
-  return values
-},['all']);
-
-const categoryBtns = categories.map((category) => {
-  return `<button class="filter-btn" type="button" data-id="${category}">
-    <i class="fa-solid fa-check"></i> ${category}
-  </button>`;
-}).join("");
-
-console.log(categoryBtns); 
-
-const filterBtns = document.querySelector('.filter-button-container');
-filterBtns.innerHTML = categoryBtns;
 
 // filter section
