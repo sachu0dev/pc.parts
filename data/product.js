@@ -126,7 +126,7 @@ export const products = [
     rating: 4.9,
     price: 14999,
     info:  "ZEBRONICS ZEB-GC3000 Premium Gaming Chair with RGB Lights, 4D Armrest, 90-180 Degree Backrest, Neck & Lumbar Cushion, Adjustable Height, 360 Swivels & Casters",
-    keyword1: "gamingchair",
+    keyword1: "chair",
     keyword2: 'gaming'
   },
   {
@@ -168,5 +168,206 @@ export const products = [
     info:  "GIGABYTE GeForce RTX 3080 Ti Vision OC 12G pci_e_x16 Graphics Card, 3X WINDFORCE Fans, 12GB 384-bit GDDR6X, GV-N308TVISION OC-12GD Video Card",
     keyword1: "graphicscard",
     keyword2: 'gigabyte'
-  }
+  },
+  {
+    id: "menu-10",
+    image: "images/menu-10.jpg",
+    name: "Acer Predator Helios Neo 16",
+    rating: 4.9,
+    price: 114000,
+    info:  "Gaming Laptop 13th Gen Intel Core i7 Processor (16 GB/1 TB SSD/Windows 11 Home/NVIDIA ® GeForce RTX ¢ 4050) PHN16-71, (16) WUXGA Display",
+    keyword1: "laptop",
+    keyword2: 'intel'
+  },
+  {
+    id: "menu-11",
+    image: "images/menu-11.webp",
+    name: "Acer Nitro 5",
+    rating: 4.9,
+    price: 114000,
+    info:  "Intel Core i5-9300H 15.6-inch Full HD 1920 x 1080 Display Thin and Light Gaming Laptop (8GB/1TB+256GB SSD/Windows 10 Home/GTX 1650 Graphics/Obsidian Black/2.3 kgs),AN515-54",
+    keyword1: "laptop",
+    keyword2: 'intel'
+  },
+  {
+    id: "menu-12",
+    image: "images/menu-12.jpg",
+    name: "ASUS TUF Gaming F15, FHD 144Hz",
+    rating: 4.9,
+    price: 51990,
+    info:  "FHD 144Hz, Intel Core i5-10300H 10th Gen, 4GB NVIDIA GeForce GTX 1650, Gaming Laptop (8GB/512GB SSD/Windows 11/Office H&S/Black/2.3 Kg), FX506LHB-HN355WS",
+    keyword1: "laptop",
+    keyword2: 'intel'
+  },
+  {
+    id: "menu-13",
+    image: "images/menu-13.jpg",
+    name: "Lenovo LOQ Gaming Notebook - 2023",
+    rating: 4.9,
+    price: 51990,
+    info:  "Lenovo LOQ Gaming Notebook - 2023 - Windows 11 - 15.6 FHD - 16GB Memory - 512GB Storage - Intel Core i5 12450H - Onyx Grey",
+    keyword1: "laptop",
+    keyword2: 'intel'
+  },
+  {
+    id: "menu-14",
+    image: "images/menu-14.jpg",
+    name: "ASUS ROG Strix GeForce RTX™ 4080",
+    rating: 4.9,
+    price: 219999,
+    info:  "ASUS ROG Strix GeForce RTX™ 4080 White OC Edition Gaming Graphics Card (PCIe 4.0, 16GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a)",
+    keyword1: "graphicscard",
+    keyword2: 'asus'
+  },
+  {
+    id: "menu-15",
+    image: "images/menu-15.jpg",
+    name: "MSI Geforce Geforce RTX 4070 Ti",
+    rating: 4.9,
+    price: 219999,
+    info:  "Suprim X 12G Gaming Graphics Card-12Gb Gddr6X,2790 Mhz,Pci Express Gen 4,192-Bit,3X Dp V 1.4A,Hdmi 2.1A (Supports 4K&8K HDR),pci_e",
+    keyword1: "graphicscard",
+    keyword2: 'msi'
+  },
+  {
+    id: "menu-16",
+    image: "images/menu-16.jpg",
+    name: "Gigabyte GeForce RTX 4060",
+    rating: 4.9,
+    price: 31979,
+    info:  "Gigabyte GeForce RTX 4060 Gaming OC 8G Graphics Card, 3X WINDFORCE Fans, 8GB 128-bit GDDR6, GV-N4060GAMING OC-8GD Video Card",
+    keyword1: "graphicscard",
+    keyword2: 'gigabyte'
+  },
+  {
+    id: "menu-17",
+    image: "images/menu-17.jpg",
+    name: "ASUS TUF Gaming NVIDIA GeForce RTX 3080 Ti",
+    rating: 4.9,
+    price: 159999,
+    info:  "GeForce RTX 3080 Ti OC Edition Graphics Card (PCIe 4.0, 12 GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II), pci_e_x16",
+    keyword1: "graphicscard",
+    keyword2: 'asus'
+  },
+  {
+    id: "menu-18",
+    image: "images/menu-18.jpg",
+    name: "Zotac Gaming Geforce RTX 3050",
+    rating: 4.9,
+    price: 159999,
+    info:  "Twin Edge Oc Gddr6 8Gb 128Bit Pcie 4.0 Graphics Card with Icestorm 2.0 Cooling,1807Mhz Boost Clock&5 Years Warranty (3 Years Warranty+2 Years Extended Warranty),pci_e_x4",
+    keyword1: "graphicscard",
+    keyword2: 'gaming'
+  },
+  {
+    id: "menu-19",
+    image: "images/menu-19.jpg",
+    name: "MSI Stealth 17 Studio",
+    rating: 4.9,
+    price: 480103,
+    info:  "Intel 13th Gen. i9-13900H, 43CM FHD 144Hz Mini LED, HDR 1000 Gaming Laptop (64GB/2TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX4080, 12GB GDDR6/Core Black/3.3Kg), A13VH-055IN",
+    keyword1: "laptop",
+    keyword2: 'msi'
+  },
+  {
+    id: "menu-20",
+    image: "images/menu-20.jpg",
+    name: "MSI Optix MAG342CQR 34 Inch",
+    rating: 4.9,
+    price: 480103,
+    info:  "Curved Gaming LCD Monitor - 21:9 UWQHD 3440 x 1440 Pixels, 1ms Response Time/1500R/144Hz/Night Vison/AMD Adaptive Sync/Mystic Light RGB, Black",
+    keyword1: "gaming",
+    keyword2: 'msi'
+  },
+  {
+    id: "menu-21",
+    image: "images/menu-21.webp",
+    name: "MSI MAG CH120 I Black Gaming Chair",
+    rating: 4.9,
+    price: 480103,
+    info:  "MSI MAG CH120 I Black Gaming Chair",
+    keyword1: "chair",
+    keyword2: 'msi'
+  },
+  {
+    id: "menu-22",
+    image: "images/menu-22.jpg",
+    name: "MSI Vigor GK30 RGB Wired Gaming Keyboard",
+    rating: 4.9,
+    price: 3103,
+    info:  "MSI Vigor GK30 RGB Wired Gaming Keyboard, 6-Zone RGB Lighting, Water Repellent & Splash-Proof, Mechanical-Like Plunger Switches",
+    keyword1: "keyboard",
+    keyword2: 'msi'
+  },
+  {
+    id: "menu-24",
+    image: "images/menu-24.jpg",
+    name: "Acer Predator Vesta II DDR5 RGB RAM 32GB Kit",
+    rating: 4.9,
+    price: 183990,
+    info:  "DDR5 RGB RAM 32GB Kit (16GBx2) 5200MHz (PC5-41600) C38 Desktop Memory 1.25V with Temperature Sensor - BL.9BWWR.316",
+    keyword1: "ram",
+    keyword2: 'memory'
+  },
+  {
+    id: "menu-25",
+    image: "images/menu-25.jpg",
+    name: "TEAMGROUP T-Force Vulcan DDR5 32GB 5200MHz",
+    rating: 4.9,
+    price: 183990,
+    info:  "DDR5 32GB 5200MHz (PC5-41600) CL40 Metal Hitsink Desktop Gaming Memory Module Ram (Red) - FLRD532G5200HC40C01",
+    keyword1: "ram",
+    keyword2: 'memory'
+  },
+  {
+    id: "menu-26",
+    image: "images/menu-26.jpg",
+    name: "Intel Core i7-10700K Processor",
+    rating: 4.9,
+    price: 55700,
+    info:  "Intel Core i7-10700K Desktop Processor 8 Cores up to 5.1 GHz Unlocked� LGA1200 (Intel 400 Series chipset) 125w",
+    keyword1: "processors",
+    keyword2: 'intel'
+  },
+  {
+    id: "menu-27",
+    image: "images/menu-27.jpg",
+    name: "Intel Core i5-10400F Processor",
+    rating: 4.9,
+    price: 55700,
+    info:  "Intel Core i5-10400F 10th Generation Processor with 12MB Cache Memory 6 Cores 12 Threads and 3 Years Warranty (Comes with Fan Inside The Box)",
+    keyword1: "processors",
+    keyword2: 'intel'
+  },
+  {
+    id: "menu-28",
+    image: "images/menu-28.jpg",
+    name: "AMD Ryzen 5 3600 Desktop Processor",
+    rating: 4.9,
+    price: 55700,
+    info:  "AMD Ryzen 5 3600 Desktop Processor 6 Cores up to 4.2 GHz 35MB Cache Socket AM4 (100-000000031)",
+    keyword1: "processors",
+    keyword2: 'amd'
+  },
+  {
+    id: "menu-29",
+    image: "images/menu-29.jpg",
+    name: "AMD Ryzen 5 3600 Desktop Processor",
+    rating: 4.9,
+    price: 55700,
+    info:  "AMD Ryzen 5 3600 Desktop Processor 6 Cores up to 4.2 GHz 35MB Cache Socket AM4 (100-000000031)",
+    keyword1: "processors",
+    keyword2: 'amd'
+  },
+  {
+    id: "menu-30",
+    image: "images/menu-30.jpg",
+    name: "AMD 7000 Series Ryzen 9 7900X",
+    rating: 4.9,
+    price: 55700,
+    info:  "AMD 7000 Series Ryzen 9 7900X Desktop Processor 12 cores 24 Threads 76 MB Cache 4.7 GHz Up to 5.6 GHz Socket AM5, 600 Series Chipset (100-100000589WOF)",
+    keyword1: "processors",
+    keyword2: 'amd'
+  },
+ 
 ];
