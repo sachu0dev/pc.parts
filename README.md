@@ -2,7 +2,7 @@
 
 Welcome to PC.Parts Showcase, a cutting-edge web application designed to showcase computer components in an intuitive and user-friendly manner. This project demonstrates my skills in web development, user interface design, and attention to detail.
 
-## Live Demo : [PcParts Live Demo](pc-parts-in.netlify.app "Visit Pcparts")
+## Live Demo : [PcParts Live Demo](https://pc-parts-in.netlify.app/ "Visit Pcparts")
 
 
 
