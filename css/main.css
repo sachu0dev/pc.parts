@@ -625,7 +625,7 @@ header .icons #menu-bars{
   display: none;
   text-transform: uppercase;
   flex-wrap: wrap;
-  width: 60vw;
+  max-width: 100vw;
 }
 
 .show-filters{
@@ -702,6 +702,7 @@ header .icons #menu-bars{
   .home .home-slider .slide .content h3{
     font-size: 5rem;
   }
+
 }
 
 @media (max-width:450px){
