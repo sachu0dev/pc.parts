@@ -140,12 +140,15 @@ filterBtn.addEventListener('click', ()=>{
   filterBtns.classList.toggle('show-filters');
 });
 
-const categories = products.reduce(function(values, item) {
-  const uniqueKeywords = new Set(item.keywords);
-  values = values.concat([...uniqueKeywords]);
-
-  return values;
-}, ['all']);
+const categories = products.reduce(function(values, item){
+  if(!values.includes(item.keyword1)){
+    values.push(item.keyword1);
+  }
+  if(!values.includes(item.keyword2)){
+    values.push(item.keyword2);
+  }
+  return values
+},['all']);
 
 const categoryBtns = categories.map((category) => {
   return `<button class="filter-btn" type="button" data-id="${category}">
