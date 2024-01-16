@@ -57,6 +57,7 @@ body{
   grid-template-columns: 2fr 1fr;
   width: 60vw;
   background-color: rgb(246, 246, 246);
+  box-shadow: var(--box-shadow);
 }
 
 .checkout-left{
@@ -223,12 +224,19 @@ hr {
   border: 0;
   cursor: pointer;
   outline: 0;
-  margin-bottom: 2rem;
 }
 .button:focus-visible {
   background-color: #333;
 }
 /* form stats */
+
+/* payment */
+.payment-price{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/* payment */
 .checkout-right{
   padding: 2rem 1rem;
 }
@@ -308,4 +316,25 @@ p{
   .steps-icons div{
     width: 3.5rem;
   }
+}
+
+.opt-1,
+.opt-3{
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.opt-3{
+  border: 2px solid lightgray;
+  padding: 1rem;
+}
+
+.opt-1 h4,
+.opt-3 h4{
+  font-size: 1.5rem;
+}
+
+.opt-1 img{
+  height: 1rem;
 }

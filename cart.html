@@ -36,82 +36,72 @@
 
   <!-- cart section starts -->
 
-  <div class="card">
-    <div class="row">
-        <div class="cart">
-            <div class="title">
-                <div class="item-row">
-                    <div class="title"><h4><b>Shopping Cart</b></h4></div>
-                    <div class="item-count">3 items</div>
-                </div>
-            </div>    
-            <div class="single-product">
-                <div class="main">
-                    <div class="product-img"><img src="images/home-img-1.webp">
-                    </div>
-                    <div class="product-info">
-                        <div class="product-brand">Shirt</div>
-                        <div class="product-name">Cotton T-shirt</div>
-                    </div>
-                    <div class="icount-changer">
-                        <a href="#">-</a><a href="#">1</a><a href="#">+</a>
-                    </div>
-                    <div class="price">&#8377; 100000 <i class="fa-solid fa-xmark"></i></div>
-                </div>
+  <section class="cart">
+    <div class="cart-left">
+        <div class="cart-div">
+            <h2>Shopping Cart</h2>
+            <p class="rndm-pd">3 Items</p>
+        </div>
+        <div class="cart-container">
+            <div class="cart-div">
+                <img src="images/menu-1.jpg" alt="">
+                <h4>Asus ROG Strix G17</h4>
+                <span><i class="fa-solid fa-plus"></i> 1 <i class="fa-solid fa-minus"></i></span>
+                <span>&#8377;20000<button><i class="fa-solid fa-trash"></i></button></span>
             </div>
-            <div class="single-product">
-              <div class="main">
-                  <div class="product-img"><img src="images/home-img-1.webp">
-                  </div>
-                  <div class="product-info">
-                      <div class="product-brand">Shirt</div>
-                      <div class="product-name">Cotton T-shirt</div>
-                  </div>
-                  <div class="icount-changer">
-                      <a href="#">-</a><a href="#">1</a><a href="#">+</a>
-                  </div>
-                  <div class="price">&#8377; 100000 <i class="fa-solid fa-xmark"></i></div>
-              </div>
-          </div>
-          <div class="single-product">
-            <div class="main">
-                <div class="product-img"><img src="images/home-img-1.webp">
-                </div>
-                <div class="product-info">
-                    <div class="product-brand">Shirt</div>
-                    <div class="product-name">Cotton T-shirt</div>
-                </div>
-                <div class="icount-changer">
-                    <a href="#">-</a><a href="#">1</a><a href="#">+</a>
-                </div>
-                <div class="price">&#8377; 100000 <i class="fa-solid fa-xmark"></i></div>
+
+            <div class="cart-div">
+                <img src="images/menu-1.jpg" alt="">
+                <h4>Asus ROG Strix G17</h4>
+                <span><i class="fa-solid fa-plus"></i> 1 <i class="fa-solid fa-minus"></i></span>
+                <span>&#8377;20000<button><i class="fa-solid fa-trash"></i></button></span>
+            </div>
+
+            <div class="cart-div">
+                <img src="images/menu-1.jpg" alt="">
+                <h4>Asus ROG Strix G17</h4>
+                <span><i class="fa-solid fa-plus"></i> 1 <i class="fa-solid fa-minus"></i></span>
+                <span>&#8377;20000<button><i class="fa-solid fa-trash"></i></button></span>
+            </div>
+
+            <div class="cart-div">
+                <img src="images/menu-1.jpg" alt="">
+                <h4>Asus ROG Strix G17</h4>
+                <span><i class="fa-solid fa-plus"></i> 1 <i class="fa-solid fa-minus"></i></span>
+                <span>&#8377;20000<button><i class="fa-solid fa-trash"></i></button></span>
             </div>
         </div>
-            <div class="back-to-shop"><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to shop</a></div>
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Back To Shop</a>
+    </div>
+    <div class="cart-right">
+        <h2>Summary</h2>
+        <div class="cart-div">
+            <h5>ITEMS 3</h5>
+            <p>&#8377;20000</p>
         </div>
-        <div class="summary">
-            <div class="summary-txt"><h5><b>Summary</b></h5></div>
-            <hr>
-            <div class="summary-row">
-                <div class="item-count">ITEMS 3</div>
-                <div class="price">&#8377; 100000</div>
+        <div class="container">
+                <label class="field">
+                    <span class="field__label" for="shipping-opt">Delivery Option</span>
+                    <div class="form">
+                        <select class="field__label" id="field_input">
+                            <option value="Standerd_Delivery_Free">Standerd_Delivery_Free</option>
+                            <option value="Superfast_Delivery_Free">Superfast_Delivery_₹100</option>
+                        </select>
+                    </div>
+                </label>
+                <label class="field">
+                    <span class="field__label" for="city">Give Code</span>
+                    <input class="field__input" type="text" id="code" />
+                </label>
             </div>
-            <form>
-                <p>SHIPPING</p>
-                <select class="shipping-charges"><option class="shipping-opt">Standard-Delivery- &#8377;Free</option>
-                  <option class="shipping-opt">SuperFast-Delivery- &#8377;40</option></select>
-                <p>GIVE CODE</p>
-                <input id="code" placeholder="Enter your code">
-            </form>
-            <div class="price-row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-                <div>TOTAL PRICE</div>
-                <div>&#8377; 13700</div>
+            <div class="cart-div total-top">
+                <h6>TOTAL PRICE</h5>
+                <a href="#">&#8377;20000</a>
             </div>
-            <a href="checkout.html"><button class="btn">CHECKOUT</button></a>
+            <button class="button">Checkout</button>
         </div>
     </div>
-    
-</div>
+  </section>
 
   <!-- cart section ends -->
   
