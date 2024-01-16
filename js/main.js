@@ -83,3 +83,9 @@ var swiper = new Swiper(".sales-slider", {
 let cartAmount = 0;
 const cartElement = document.querySelector('.cart-no');
 cartElement.textContent = '';
+
+const preloader = document.querySelector('.pl');
+
+window.addEventListener('load', ()=>{
+  preloader.classList.add('hide-preloader');
+})
