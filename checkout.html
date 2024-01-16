@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PCparts.in</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+
+<!-- checkout starts -->
+
+  <section class="checkout">
+    <div class="checkout-left">
+      <h1>PcParts.in</h1>
+      <h2><i class="fa-solid fa-lock"></i> Checkout</h2>
+      <div class="steps-icons">
+        <button class="step-active" href="">
+          1
+        </button>
+        <div></div>
+        <button class="step-of" href="">
+         2
+        </button>
+        <div></div>
+        <button class="step-of" href="">
+          3
+        </button>
+      </div>
+      <div class="steps-text">
+        <p>Shipping</p>
+        <p>Payment</p>
+        <p>Place Order</p>
+      </div>
+      <div class="shipping-info">
+        <h2 class="ship-heading">Ship to</h2>
+  <p>Please enter your shipping details.</p>
+  <hr />
+  <div class="form">
+    
+  <div class="fields fields--2">
+    <label class="field">
+      <span class="field__label" for="firstname">First name</span>
+      <input class="field__input" type="text" id="firstname" />
+    </label>
+    <label class="field">
+      <span class="field__label" for="lastname">Last name</span>
+      <input class="field__input" type="text" id="lastname" />
+    </label>
+  </div>
+  <label class="field">
+    <span class="field__label" for="address">Address</span>
+    <input class="field__input" type="text" id="address" />
+  </label>
+  <label class="field">
+    <span class="field__label" for="country">Country</span>
+    <select class="field__input" id="country">
+      <option value=""></option>
+      <option value="unitedstates">United States</option>
+    </select>
+  </label>
+  <div class="fields fields--3">
+    <label class="field">
+      <span class="field__label" for="zipcode">Zip code</span>
+      <input class="field__input" type="text" id="zipcode" />
+    </label>
+    <label class="field">
+      <span class="field__label" for="city">City</span>
+      <input class="field__input" type="text" id="city" />
+    </label>
+    <label class="field">
+      <span class="field__label" for="state">State</span>
+      <select class="field__input" id="state">
+        <option value=""></option>
+      </select>
+    </label>
+  </div>
+  <div class="fields fields--4">
+    <label class="field">
+      <span class="field__label" for="firstname">Email</span>
+      <input class="field__input" type="text" id="firstname" />
+    </label>
+    <label class="field">
+      <span class="field__label" for="lastname">Phone Number</span>
+      <input class="field__input" type="text" id="lastname"/>
+    </label>
+  </div>
+  </div>
+  <hr>
+  <button class="button">Continue</button>
+      </div>
+    </div>
+    <div class="checkout-right">
+      <div class="order-summary">
+
+        <div class="summary-top">
+          <h2>Order Summary</h2>
+          <a href="#">Edit Cart</a>
+        </div>
+
+        <div class="summary-mid">
+          <div class="mid-1">
+            <h3>Merchandise:</h2>
+            <p href="3">&#8377; 10000</p>
+          </div>
+          <div class="mid-2">
+            <h3>Shipping & Handling:</h2>
+            <p href="3">&#8377; 50</p>
+          </div>
+          <div class="mid-3">
+            <h3>Tax:</h2>
+            <p href="3">&#8377; 100</p>
+          </div>
+        </div>
+
+        <div class="summary-bottom">
+          <h2>Order Total:</h2>
+          <p href="3">&#8377; 20000</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+<!-- checkout ends -->
+  <script src="js/main.js"></script>
+</body>
+</html>

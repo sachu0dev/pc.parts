@@ -43,7 +43,7 @@ header{
   justify-content: space-between;
   z-index: 1000;
   box-shadow: var(--box-shadow);
-  height: 10vh;
+  height: 8vh;
 }
 
 header .logo{
