@@ -9,7 +9,7 @@
 }
 
 html {
-  font-family: "Inter", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 1rem;
   box-sizing: border-box;
 }
@@ -43,7 +43,7 @@ body{
   background: #ddd;
   vertical-align: middle;
   display: flex;
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
   padding: 5vh 0;
