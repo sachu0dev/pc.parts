@@ -200,7 +200,6 @@ header .icons a i:hover{
 .cart-div h6,
 .cart-div a{
   padding-top: 1.5rem;
-
 }
 
 .total-top{
@@ -299,101 +298,54 @@ header .icons a i:hover{
 
 /* media queries */
 
-@media (max-width:991px){
 
+
+@media (max-width:1400px){
+  .cart{
+    width: 90vw;
+  }
+}
+
+@media (max-width:991px){
+  body{
+    padding: 0;
+    margin: 0;
+  }
   html{
-    font-size: 55%;
+    font-size: 80%;
   }
   header{
     padding: 1rem 2rem;
   }
-  section{
+
+  .cart{
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin-top: 8vh;
+  }
+
+  .cart-left{
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 0;
     padding: 2rem;
   }
-  .row{
-    grid-template-columns: 100%;
+  .cart-div img{
+    width: 10rem;
   }
-  .cart{
-    padding: 2vh 3vh;
-    border-bottom-left-radius: 1rem;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    border-top-right-radius: 1rem;
+  .cart-right{
+    padding: 4rem 4rem;
   }
-
 }
 
-@media (max-width:768px){
-
-  header .navbar{
-    position: absolute;
-    top:100%; left:0; right:0;
-    background: #fff;
-    border-top: .1rem solid rgba(0,0,0,.2);
-    border-bottom: .1rem solid rgba(0,0,0,.2);
-    padding: 1rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+@media (max-width:700px){
+  body{
+    padding: 0;
+    margin: 0;
   }
-
-  header .navbar.active{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
-
-  header .navbar a{
-    display: block;
-    padding: 1.5rem;
-    margin: 1rem;
-    font-size: 2rem;
-    background: #eee;
-  }
-  .item-row,
-  .price-row,
-  .summary-row,
-  .summary-txt{
-    display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
-  }
-  .product-brand{
-    font-size: 1.6rem;
-  }
-  .product-name{
-    font-size: 1.8rem;
-  }
-  .price{
-    font-size: 1.8rem;
-  }
-  .price i{
-    font-size: 2rem;
-  }
-  
-  a{
-    padding: 0 1vw;
-    font-size: 1.6rem;
-  }
-  .close{
-    margin-left: auto;
-    font-size: 2rem;
-  }
-  .summary{
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 1rem;
-    border-top-left-radius: 0rem;
-    border-bottom-left-radius: 1rem;
-  }
-  p{
-    font-size: 1.5rem;
-  }
-  
-}
-
-
-@media (max-width:450px){
-
   html{
-    font-size: 50%;
+    font-size: 60%;
   }
-  
-
-
+  header{
+    padding: 1rem 2rem;
+  }
 }
