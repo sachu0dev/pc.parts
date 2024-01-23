@@ -14,7 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-
 //home section slider starts
 
 function renderSlider(products){
@@ -75,7 +74,7 @@ const filterBtns = document.querySelector('.filter-button-container');
 function renderProducts(products){
   let productsItems = products.map((item)=>{
     return `
-      <div class="box ${item.id}">
+      <div class="box" data-id="${item.id}">
         <a href="#" class="fas fa-heart"></a>
         <a href="#" class="fas fa-eye"></a>
         <a href="product.html"><img src=${item.image}></a>
@@ -126,7 +125,6 @@ function displayFilterBtn(){
   }).join("");
   filterBtns.innerHTML = categoryBtns;
   const addedBtns = document.querySelectorAll('.filter-btn');
-  console.log(addedBtns);
   //filter items
   addedBtns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
