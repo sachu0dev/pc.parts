@@ -1,201 +1,214 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>PCparts.in</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-<!--    header section start     -->
+    <!--    header section start     -->
 
-<header>
+    <header>
+      <nav class="navbar">
+        <a class="active" href="#home">home</a>
+        <a href="#product">Featured</a>
+        <a href="#about">about</a>
+        <a href="#menu">products</a>
+        <a href="#sales">sales</a>
+        <a href="#order">order</a>
+      </nav>
 
-  <nav class="navbar">
-    <a class="active" href="#home">home</a>
-    <a href="#product">Featured</a>
-    <a href="#about">about</a>
-    <a href="#menu">products</a>
-    <a href="#sales">sales</a>
-    <a href="#order">order</a>
-  </nav>
+      <a href="#" class="logo">
+        <i class="fa-solid fa-desktop"></i>
+        pcparts.</a
+      >
 
-  <a href="#" class="logo">
-    <i class="fa-solid fa-desktop"></i>
-  pcparts.</a>
-
-  <div class="icons">
-    <a><i class="fa-solid fa-bars" id="menu-bars"></i></a>
-    <a><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></a>
-    <a><i class="fa-solid fa-heart"></i></a>
-    <a href="cart.html"><i class="fa-solid fa-cart-shopping"><p class="cart-no">1</p></i></a>
-  </div>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- search form -->
-
-<form action="" id="search-form">
-  <input type="search" placeholder="search here..." name="" id="search-box">
-  <label for="search-box" class="fas fa-search"></label>
-  <i class="fas fa-times" id="close"></i>
-</form>
-
-<!-- home section starts -->
-
-<section class="home" id="home">
-
-  <div class="swiper home-slider">
-
-    <div class="swiper-wrapper wrapper" id="slider">
-
-    </div>
-
-    <div class="swiper-pagination"></div>
-
-  </div>
-
-
-</section>
-
-<!-- home ssection ends -->
-
-<!-- product section starts -->
-
-<section class="product" id="product">
-
-<h3 class="sub-heading">featured</h3>
-<h1 class="heading">popular products</h1>
-<h2 class="filter-show-btn">Filter <i class="fa-solid fa-angle-down filter-arrow"></i></h2>
-<div class="filter-button-container">
- 
-</div>
-
-<div class="box-container" id="product-box">
-<!-- the products get incerted her -->
-</div>
-
-</section>
-
-<!-- product section ends -->
-
-<!-- about section starts -->
-
-<section class="about" id="about">
-
-  <h3 class="sub-heading"> about us </h3>
-  <h1 class="heading"> why choose us? </h1>
-
-  <div class="row">
-
-    <div class="image">
-      <img src="images/about-img.png">
-    </div>
-
-    <div class="content">
-      <h3>Discover India's Top Destination for High-Speed Performance and a Wide Array of PC Parts and Cutting-Edge Tech!</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eum corporis nam delectus veniam et itaque laudantium totam quis adipisci, ipsa similique hic reiciendis obcaecati aut voluptas. Recusandae, dolorum illum?</p>
-      <div class="icons-container">
-        <div class="icons">
-          <i class="fas fa-shipping-fast"></i>
-          <span>free delivery</span>
-        </div>
-        <div class="icons">
-          <i class="fa-solid fa-indian-rupee-sign"></i>
-          <span>easy payments</span>
-        </div>
-        <div class="icons">
-          <i class="fa-solid fa-headset"></i>
-          <span>24/7 sercvice</span>
-        </div>
+      <div class="icons">
+        <a><i class="fa-solid fa-bars" id="menu-bars"></i></a>
+        <a><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></a>
+        <a><i class="fa-solid fa-heart"></i></a>
+        <a href="cart.html"
+          ><i class="fa-solid fa-cart-shopping"><p class="cart-no">1</p></i></a
+        >
       </div>
-      <a href="#" class="btn">learn more</a>
+    </header>
 
-    </div>
+    <!-- header section ends -->
 
-  </div>
+    <!-- search form -->
 
-</section>
+    <form action="" id="search-form">
+      <input
+        type="search"
+        placeholder="search here..."
+        name=""
+        id="search-box"
+      />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
 
-<!-- about section ends -->
+    <!-- home section starts -->
 
-<!-- menu section starts -->
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper wrapper" id="slider"></div>
 
-<section class="menu" id="menu">
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
-  <h3 class="sub-heading"> products </h3>
-  <h1 class="heading"> pc parts choise </h1>
+    <!-- home ssection ends -->
 
-  <div class="box-container" id="box-container">
+    <!-- product section starts -->
 
-  </div>
+    <section class="product" id="product">
+      <h3 class="sub-heading">featured</h3>
+      <h1 class="heading">popular products</h1>
+      <h2 class="filter-show-btn">
+        Filter <i class="fa-solid fa-angle-down filter-arrow"></i>
+      </h2>
+      <div class="filter-button-container"></div>
 
-</section>
+      <div class="box-container" id="product-box">
+        <!-- the products get incerted her -->
+      </div>
+    </section>
 
-<!-- menu section ends -->
+    <!-- product section ends -->
 
-<!-- sales section starts -->
+    <!-- about section starts -->
 
-  <section class="sales" id="sales">
-    <h1 class="heading1"> ongoing sales </h1>
+    <section class="about" id="about">
+      <h3 class="sub-heading">about us</h3>
+      <h1 class="heading">why choose us?</h1>
 
-    <div class="swiper sales-slider">
-  
-      <div class="swiper-wrapper wrapper">
-  
-        <div class="swiper-slide slide">
-          <div class="content">
-            <span>popular sales</span>
-            <h3>Winter Sale: Hot Deals on Essential PC Parts!</h3>
-            <p>Winter PC Parts Sale: Upgrade and save big on processors, storage, and more. Limited-time offers for a cooler computing experience!</p>
-            <a href="#" class="btn">view deals</a>
-          </div>
-          <div class="image">
-            <img src="images/sale-1.png">
-          </div>
-        </div>
-
-      <div class="swiper-slide slide">
-        <div class="content">
-          <span>popular sales</span>
-          <h3>New Year, New Gear: Celebrate with Our Tech Extravaganza!</h3>
-          <p>Step into 2024 with our New Year Sale unlock unbeatable deals on processors, graphics cards, and more for a tech-powered start to the year</p>
-          <a href="#" class="btn">view deals</a>
-        </div>
+      <div class="row">
         <div class="image">
-          <img src="images/sale-2.png">
+          <img src="images/about-img.png" />
         </div>
-      </div>
 
-      <div class="swiper-slide slide">
         <div class="content">
-          <span>our most popular</span>
-          <h3>Epic Savings: Unleash Unbeatable Deals Now!</h3>
-          <p>Dive into the ultimate shopping spree with our Big Sale Now! Discover unbeatable deals on top tech – limited time, maximum savings!</p>
-          <a href="#" class="btn">view deals</a>
-        </div>
-        <div class="image">
-          <img src="images/sale-3.png">
+          <h3>
+            Discover India's Top Destination for High-Speed Performance and a
+            Wide Array of PC Parts and Cutting-Edge Tech!
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eum
+            corporis nam delectus veniam et itaque laudantium totam quis
+            adipisci, ipsa similique hic reiciendis obcaecati aut voluptas.
+            Recusandae, dolorum illum?
+          </p>
+          <div class="icons-container">
+            <div class="icons">
+              <i class="fas fa-shipping-fast"></i>
+              <span>free delivery</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <span>easy payments</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-headset"></i>
+              <span>24/7 sercvice</span>
+            </div>
+          </div>
+          <a href="#" class="btn">learn more</a>
         </div>
       </div>
-      <div class="swiper-pagination-sales"></div>
-    </div>
-  </section>
+    </section>
 
-<!-- sales section ends -->
+    <!-- about section ends -->
 
-<!-- order section starts -->
+    <!-- menu section starts -->
 
-<!-- <section class="order" id="order">
+    <section class="menu" id="menu">
+      <h3 class="sub-heading">products</h3>
+      <h1 class="heading">pc parts choise</h1>
+
+      <div class="box-container" id="box-container"></div>
+    </section>
+
+    <!-- menu section ends -->
+
+    <!-- sales section starts -->
+
+    <section class="sales" id="sales">
+      <h1 class="heading1">ongoing sales</h1>
+
+      <div class="swiper sales-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>popular sales</span>
+              <h3>Winter Sale: Hot Deals on Essential PC Parts!</h3>
+              <p>
+                Winter PC Parts Sale: Upgrade and save big on processors,
+                storage, and more. Limited-time offers for a cooler computing
+                experience!
+              </p>
+              <a href="#" class="btn">view deals</a>
+            </div>
+            <div class="image">
+              <img src="images/sale-1.png" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>popular sales</span>
+              <h3>New Year, New Gear: Celebrate with Our Tech Extravaganza!</h3>
+              <p>
+                Step into 2024 with our New Year Sale unlock unbeatable deals on
+                processors, graphics cards, and more for a tech-powered start to
+                the year
+              </p>
+              <a href="#" class="btn">view deals</a>
+            </div>
+            <div class="image">
+              <img src="images/sale-2.png" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>our most popular</span>
+              <h3>Epic Savings: Unleash Unbeatable Deals Now!</h3>
+              <p>
+                Dive into the ultimate shopping spree with our Big Sale Now!
+                Discover unbeatable deals on top tech – limited time, maximum
+                savings!
+              </p>
+              <a href="#" class="btn">view deals</a>
+            </div>
+            <div class="image">
+              <img src="images/sale-3.png" />
+            </div>
+          </div>
+          <div class="swiper-pagination-sales"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sales section ends -->
+
+    <!-- order section starts -->
+
+    <!-- <section class="order" id="order">
 
   <h3 class="sub-heading"> order now </h3>
   <h1 class="heading"> free and fast </h1>
@@ -248,87 +261,122 @@
 
 </section> -->
 
-<!-- order section ends -->
+    <!-- order section ends -->
 
-<!-- footer section starts -->
+    <!-- footer section starts -->
 
-<section class="footer">
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">india</a>
+          <a href="#">japan</a>
+          <a href="#">russia</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+        </div>
 
-  <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#">home</a>
+          <a href="#">featured</a>
+          <a href="#">about</a>
+          <a href="#">products</a>
+          <a href="#">sales</a>
+          <a href="#">order</a>
+        </div>
 
-    <div class="box">
-      <h3>locations</h3>
-      <a href="#">india</a>
-      <a href="#">japan</a>
-      <a href="#">russia</a>
-      <a href="#">USA</a>
-      <a href="#">france</a>
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#">+91-1234567890</a>
+          <a href="#">+91-0987654321</a>
+          <a href="#">sushil.dev.in@gmail.com</a>
+          <a href="#">sushil.dev.in@gmail.com</a>
+          <a href="#">Punjab, india - 145001</a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
+      <div class="credit">copyright @ 2023 by<span> sushil.dev.in</span></div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- loader part -->
+    <svg class="pl" width="240" height="240" viewbox="0 0 240 240">
+      <circle
+        class="pl__ring pl__ring--a"
+        cx="120"
+        cy="120"
+        r="105"
+        fill="none"
+        stroke="#000"
+        stroke-width="20"
+        stroke-dasharray="0 660"
+        stroke-dashoffset="-330"
+        stroke-linecap="round"
+      ></circle>
+      <circle
+        class="pl__ring pl__ring--b"
+        cx="120"
+        cy="120"
+        r="35"
+        fill="none"
+        stroke="#000"
+        stroke-width="20"
+        stroke-dasharray="0 220"
+        stroke-dashoffset="-110"
+        stroke-linecap="round"
+      ></circle>
+      <circle
+        class="pl__ring pl__ring--c"
+        cx="85"
+        cy="120"
+        r="70"
+        fill="none"
+        stroke="#000"
+        stroke-width="20"
+        stroke-dasharray="0 440"
+        stroke-linecap="round"
+      ></circle>
+      <circle
+        class="pl__ring pl__ring--d"
+        cx="155"
+        cy="120"
+        r="70"
+        fill="none"
+        stroke="#000"
+        stroke-width="20"
+        stroke-dasharray="0 440"
+        stroke-linecap="round"
+      ></circle>
+    </svg>
+    <!-- source code button -->
+    <div class="source-code">
+      <a href="https://github.com/sachu0dev/pc.parts" target="_blank">
+        <button class="cssbuttons-io">
+          <span
+            ><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            Source Code</span
+          >
+        </button>
+      </a>
     </div>
 
-    <div class="box">
-      <h3>quick links</h3>
-      <a href="#">home</a>
-      <a href="#">featured</a>
-      <a href="#">about</a>
-      <a href="#">products</a>
-      <a href="#">sales</a>
-      <a href="#">order</a>
-    </div>
-
-    <div class="box">
-      <h3>contact info</h3>
-      <a href="#">+91-1234567890</a>
-      <a href="#">+91-0987654321</a>
-      <a href="#">sushil.dev.in@gmail.com</a>
-      <a href="#">sushil.dev.in@gmail.com</a>
-      <a href="#">Punjab, india - 145001</a>
-    </div>
-
-    <div class="box">
-      <h3>follow us</h3>
-      <a href="#">facebook</a>
-      <a href="#">twitter</a>
-      <a href="#">instagram</a>
-      <a href="#">linkedin</a>
-    </div>
-
-
-  </div>
-  <div class="credit"> copyright @ 2023 by<span> sushil.dev.in</span></div>
-
-</section>
-
-<!-- footer section ends -->
-
-<!-- loader part -->
-<svg class="pl" width="240" height="240" viewBox="0 0 240 240">
-	<circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
-	<circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
-	<circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
-	<circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
-</svg>
-<!-- source code button -->
-<div class="source-code">
-  <a href="https://github.com/sachu0dev/pc.parts" target="_blank">
-    <button class="cssbuttons-io">
-      <span
-        ><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0h24v24H0z" fill="none"></path>
-          <path
-            d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
-            fill="currentColor"
-          ></path>
-        </svg>
-        Source Code</span
-      >
-    </button>
-  </a>
-</div>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
-<script type="module" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="js/script.js"></script>
     <script src="js/main.js" async defer></script>
   </body>
 </html>
