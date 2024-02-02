@@ -2,7 +2,7 @@ import { products } from "../data/product.js";
 
 
 const productPage = document.getElementById('product-page');
-
+window.addEventListener('DOMContentLoaded', renderProductPage(products));
 function renderProductPage(products){
   productPage.innerHTML = `
   <div class="image-container">
@@ -35,5 +35,4 @@ function renderProductPage(products){
   </div>
 </div>`
 }
-renderProductPage(products);
 

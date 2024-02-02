@@ -140,6 +140,3 @@ function displayFilterBtn(){
     });
   });
 }
-
-
-// filter section
