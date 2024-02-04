@@ -46,7 +46,7 @@ function renderBox(products){
     choiseBox.innerHTML += `
     <div class="box ${products[randomDisplay].id}">
       <div class="image">
-      <a href="product.html"><img src="${products[randomDisplay].image}"></a>
+      <a href="product.html?id=${products[randomDisplay].id}"><img src="${products[randomDisplay].image}"></a>
         <a href="#" class="fas fa-heart"></a>
       </div>
       <div class="content">
@@ -77,7 +77,7 @@ function renderProducts(products){
       <div class="box" data-id="${item.id}">
         <a href="#" class="fas fa-heart"></a>
         <a href="#" class="fas fa-eye"></a>
-        <a href="product.html"><img src=${item.image}></a>
+        <a href="product.html?id=${item.id}"><img src=${item.image}></a>
         <h3>${item.name}</h3>
         <div class="starrs">
           <i class="fas fa-star"></i>

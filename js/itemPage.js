@@ -1,24 +1,24 @@
 import { products } from "../data/product.js";
 
-
+const index = findIndexById(products);
 const productPage = document.getElementById('product-page');
-window.addEventListener('DOMContentLoaded', renderProductPage(products));
+window.addEventListener('DOMContentLoaded', renderProductPage(products,index));
 function renderProductPage(products){
   productPage.innerHTML = `
   <div class="image-container">
-    <img src=${products[0].image}>
+    <img src=${products[index].image}>
     <i class="fa-solid fa-circle-chevron-left" id="left-image"></i>
     <i class="fa-solid fa-circle-chevron-right" id="right-image"></i>
   </div>
 <div class="info-box">
-  <h2>${products[0].name}</h2>
+  <h2>${products[index].name}</h2>
   <div class="discription-box">
     <h4>description</h4>
-    <p>${products[0].info}</p>
+    <p>${products[index].info}</p>
   </div>
   <div class="price-box">
     <h5>price</h5>
-    <h3>₹${products[0].price}</h3>
+    <h3>₹${products[index].price}</h3>
     <div class="add-box">
       <div class="input-box">
         <label for="quantity">Quantity:</label>
@@ -36,3 +36,7 @@ function renderProductPage(products){
 </div>`
 }
 
+function findIndexById(products){
+  const idFromUrl = new URLSearchParams(window.location.search).get("id");
+  return products.findIndex((product) => product.id === idFromUrl);
+}

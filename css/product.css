@@ -288,10 +288,9 @@ select {
 option{
   color: var(--black);
 }
-
-
-
-
+#quantity{
+  background: transparent;
+}
 
 
 
