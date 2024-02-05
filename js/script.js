@@ -26,7 +26,7 @@ function renderSlider(products){
       <div class="content">
         <span>our most popular</span>
         <h3>${products[randomDisplay].name}</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam consequatur magni dicta consequuntur alias modi?</p>
+        <p>${products[randomDisplay].info}</p>
         <a href="product.html" class="btn">order now</a>
       </div>
       <div class="image">
@@ -60,7 +60,7 @@ function renderBox(products){
         <h3>${products[randomDisplay].name}</h3>
         <p>${products[randomDisplay].info}</p>
         <a href="#" class="btn">add to cart</a>
-        <span class="price">₹${products[randomDisplay].price}</span>
+        <span class="price">₹${(products[randomDisplay].price).toLocaleString()}</span>
       </div>
     </div>`
   }
@@ -86,7 +86,7 @@ function renderProducts(products){
           <i class="fas fa-star"></i>
           <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹${item.price}</span>
+        <span>₹${(item.price).toLocaleString()}</span>
         <a href="#" class="btn">add to cart</a>
       </div>`
   });

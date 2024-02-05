@@ -186,14 +186,19 @@ header .icons #menu-bars{
   top: 2rem; right: 3rem;
   font-size: 4rem;
 }
-
+.home{
+  height: 100vh;
+}
+.sales{
+  height: 100vh;
+}
 .home .home-slider .slide,
 .sales .sales-slider .slide{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  padding-top: 9rem
+  padding-top: 9rem;
 }
 
 .sales .sales-slider .slide{

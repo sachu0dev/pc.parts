@@ -18,7 +18,7 @@ function renderProductPage(products){
   </div>
   <div class="price-box">
     <h5>price</h5>
-    <h3>₹${products[index].price}</h3>
+    <h3>₹${(products[index].price).toLocaleString()}</h3>
     <div class="add-box">
       <div class="input-box">
         <label for="quantity">Quantity:</label>
