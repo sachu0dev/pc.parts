@@ -64,7 +64,7 @@ export const products = [
     image: "images/product-5.avif",
     name: "H7 Flow RTX 4070 Ti Gaming PC",
     rating: 4.9,
-    price: 19962703,
+    price: 199603,
     info:  "H7 Flow RTX 4070 Ti Gaming PC. (46). Key Specs. Intel® Core™ i7-13700KF. NVIDIA ... H7 Flow RTX 4070 Ti Gaming PC.",
     keyword1: "prebiult",
     keyword2: 'intel'
